@@ -1,6 +1,20 @@
+## PROBLEM 1 ##
+#Read in target file (ex iris.csv)
+filename <- read.csv("iris.csv")
+
+#Specify number of rows to keep (ex 13)
+number <- 13
+
+#Return specified number of lines from top of specified file
+head(filename, n = number)
+
+
+
+## PROBLEM 2 ##
+#Read in iris.csv
 iris <- read.csv("iris.csv")
 
-#Prints the last 2 collumns of the last two rows of iris.csv
+#Prints the last 2 columns of the last two rows of iris.csv
 last2 <- tail(iris, n = 2)
 last2[,4:5]
 
